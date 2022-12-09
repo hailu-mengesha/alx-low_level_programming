@@ -17,7 +17,7 @@ int main(void)
 			c++;
 		}
 	while
-		(u <= 'Z') { 
+		(u <= 'Z') {	
 			putchar(u);
 			u++;
 		}

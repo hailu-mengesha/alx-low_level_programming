@@ -3,9 +3,10 @@
  * main - Entry point
  * Return: Alwayes 0 (Success)
 */
-int main(void) 
+int main(void)
 {
 	int i;
+
 	i = 0;
 	while
 		(i < 10) {
