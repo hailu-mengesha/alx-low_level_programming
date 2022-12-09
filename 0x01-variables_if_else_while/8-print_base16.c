@@ -17,7 +17,7 @@ int main(void)
 			d++;
 		}
 	while
-		(c < 'f') {
+		(c < 'g') {
 			putchar(c);
 			c++;
 		}
