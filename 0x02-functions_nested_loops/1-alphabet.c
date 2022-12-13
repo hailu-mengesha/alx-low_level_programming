@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - printing alphabet
- * Return: Alwayes 0 (Success)
+ *print_alphabet - printing alphabet
+ *Return: Alwayes 0 (Success)
  */
 void print_alphabet(void)
 {

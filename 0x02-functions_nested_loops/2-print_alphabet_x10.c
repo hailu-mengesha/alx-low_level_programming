@@ -1,21 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Entry point
+ * print_alphabet_x10 - print alphabet 1ox
  * Return: Alwayes 0 (Success)
  */
-void print_alphabet_x10(void);
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
-void print_alphabet(void)
+
+void print_alphabet_x10(void)
 {
 	int n, x;
 
 	x = 0;
 	while
-		(x <10)
+		(x < 10)
 		{
 			for (n = 'a'; n <= 'z'; n++)
 			{
