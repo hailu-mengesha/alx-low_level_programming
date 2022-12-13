@@ -2,7 +2,7 @@
 /**
  * print_sign - prints signs of a number
  * @n: the input is number
- * Return: 1 and prints '+' if n is greater than zero, 0 and prints '0' if n is zero,-1 and prints '-'if n is less than zero
+ * Return: 1 prints '+' if n>0, 0 prints '0' if n=0,-1 prints '-'if n<0
  */
 int print_sign(int n)
 {
