@@ -1,20 +1,37 @@
 #include <stdio.h>
 /**
- * main - sum of multiple of 3 and 5
- * @i: natural number input
- * @sum: sum result
- * Return: Alwayes 0 (Successs)
- */
-int main(int i, int sum)
+*main - prints the addition of all numbers which are multiples of 3 and 5
+*below 1024
+*Return: 0
+*/
+int main(void)
 {
-	sum = 0;
-	for (i = 0; i < 1024; i++)
+	int n, sum;
+
+	while (n < 1024)
 	{
-		if ((i % 5 == 0) || (i % 3 == 0))
-		{
-			sum += i;
-		}
+	if ((n % 3) == 0)
+	{
+	sum = n + sum;
+	}
+	else if ((n % 5) == 0)
+	{
+	sum = n + sum;
+	}
+	n++;
 	}
 	printf("%d\n", sum);
-	return  (0);
+	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
