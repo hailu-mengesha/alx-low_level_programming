@@ -5,9 +5,9 @@
  * @sum: sum result
  * Return: Alwayes 0 (Successs)
  */
-int main(int i, int sum)
+int main(int i, sum)
 {
-	int sum = 0;
+	sum = 0;
 
 	clrscr();
 	for (i = 0; i < 1024; i++)
