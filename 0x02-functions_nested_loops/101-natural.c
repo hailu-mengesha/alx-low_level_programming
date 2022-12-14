@@ -5,7 +5,7 @@
  * @sum: sum result
  * Return: Alwayes 0 (Successs)
  */
-int main(int i int sum)
+int main(int i, int sum)
 {
 	int sum = 0;
 
