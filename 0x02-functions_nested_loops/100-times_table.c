@@ -1,37 +1,47 @@
 #include "main.h"
 /**
- * print_times_table - print n times table starting from 0
- * @n: number input
- * r = row, c = column, d = current digit
- * Return: table
- */
+* print_times_table - prints the times table for n.
+* @n: The multiplication table requested.
+* Return: the tabel.
+*/
 void print_times_table(int n)
 {
-	int r, c, d;
+	int i, j, res;
 
-	for (r = 0; r <= n; r++)
+	if (!(n > 15 || n < 0))
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-		for (c = 1; c <= n; c++)
+		for (i = 0; i <= n; i++)
 		{
-			d = (r * c);
-			if ((d / 10) > 0)
+			for (j = 0; j <= n; j++)
 			{
-				_putchar((d / 10) + '0');
+				res = (i * j);
+				if (j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				if (res < 10 && j != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((res % 10) + '0');
+				}
+				else if (res >= 10 && res < 100)
+				{
+					_putchar(' ');
+					_putchar((res / 10) + '0');
+					_putchar((res % 10) + '0');
+				}
+				else if (res >= 100 && j != 0)
+				{
+					_putchar((res / 100) + '0');
+					_putchar((res / 10) % 10 + '0');
+					_putchar((res % 10) + '0');
+				}
+				else
+					_putchar((res % 10) + '0');
 			}
-			else
-			{
-				_putchar(' ');
-			}
-			_putchar((d % 10) + '0');
-			if (c < n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
