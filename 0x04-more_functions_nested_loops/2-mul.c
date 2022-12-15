@@ -3,7 +3,7 @@
  * mul - multiply two numbers
  * @a: first input
  * @b: second input
- * Return: Nothing
+ * Return: a*b
  */
 int mul(int a, int b)
 {
